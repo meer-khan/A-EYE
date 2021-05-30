@@ -1,0 +1,80 @@
+.c-pass{
+  background-image: linear-gradient(-45deg,#041470, #1E329D);
+}
+
+form{
+  background-color: rgb(248, 248, 248);
+  border-radius: 20px;
+  box-shadow: rgba(143, 142, 142, 0.35) 0 5px 15px;
+    
+}
+.container {
+  margin-left:2%;
+}
+.container h1{
+  padding:29px;
+  color: #1E329D;
+  font-size: 35px;
+}
+hr{
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.button {
+  padding:40px;
+}
+
+label{
+  padding:14px;
+  color: #081b85;
+    
+}
+.fields input{
+  width:35%;
+  padding:6px;
+  border:6px;
+  border-radius:5px;
+  background:rgb(212, 225, 233);
+}
+.fields{
+  padding:10px;
+  margin:25px;
+  margin-left:13%;
+  
+}
+.fields input:focus {
+  background:#ddd;
+  outline-color: #1E329D;
+  
+}
+
+.button button {
+  background-color: #0f5ed6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+}
+
+.button button:hover {
+  opacity:1;
+}
+
+.savebtn {
+  width: 40%;
+}
+.button .cancelbtn{
+  background-color: rgb(143, 143, 143);
+}
+
+@media screen and (max-width: 300px) {
+    form{
+      max-width:458px;
+    }
+    .savebtn {
+      width: 100%;
+    }
+}

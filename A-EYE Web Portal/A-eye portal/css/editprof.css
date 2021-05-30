@@ -1,0 +1,81 @@
+.edit{
+  background-image: linear-gradient(-45deg,#041470, #1E329D);
+}
+
+form{
+  background-color: rgb(252, 249, 249);
+  border-radius: 20px;
+  box-shadow: rgba(143, 142, 142, 0.35) 0 5px 15px;
+    
+}
+.pic-container img{
+    position:relative;
+    float:right;
+    width:300px;
+    height:300px;
+}
+.edit h3{
+  text-align: center;
+  color: #fbfbfd;
+  font-size: 25px;
+  margin:0;
+}
+.button {
+  padding:20px;
+}
+
+label{
+  padding:14px;
+  color: #081b85;
+    
+}
+.pic-icon{
+    padding:10px;
+    text-align: center;
+    color: #041470;
+}
+
+.field-bar input{
+  width:30%;
+  padding:6px;
+  border:1px solid #081b85;
+  outline-color: #0b1f8b;
+}
+.field-bar{
+  padding:8px;
+  margin:18px;
+  margin-left:12%;
+  
+}
+.field-bar input:focus {
+  background:#ddd;
+  outline-color: #1E329D;  
+}
+
+.button button {
+  background-color: #0f5ed6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+}
+
+.button button:hover {
+  opacity:1;
+}
+.button .cancelbtn{
+    background: rgb(117, 117, 117);
+}
+.savebtn,.canelbtn{
+  width: 40%;
+}
+
+@media screen and (max-width: 300px) {
+    form{
+      max-width:458px;
+    }
+
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;
+                        0,500;0,600;0,700;1,100;1,200;1,300;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+       
+    </head>
+<body>
+    <div class="container" id="container">
+    <!--------------- FORMS -------------------------->
+        <div class="row">
+        <!---------------forgotPass form-------------------------->
+            <div class="col-1 align-items-center flex-col-1 Forgot-Password">
+                <div class="form-wrapper align-items-center">
+                    <div class="form  Forgot-Password">
+                        <h2 class="title">FORGOT PASSWORD ?</h2>
+                        <p> Enter your registered email address to get the reset password link </p> 
+                        <br>
+                <form action="" id="form">
+                        <div class="input-container">
+                            <i class="fa fa-envelope"></i>
+                            <input type="text" placeholder="Enter Email" required>
+                        </div>
+                        <br>
+                        <button> Submit Request </button>
+                        <p>
+                            <span> Just remember? </span> 
+                            <br>
+                        <b onclick="toggle()"> 
+                            Log in
+                        </b>
+                        </p>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        <!---------------END forgotPass-------------------------->
+    <!---------------Login form-------------------------->
+            <div class="col-2 align-items-center flex-col-2 log-in">
+                <div class="form-wrapper align-items-center">
+                    <div class="form log-in">
+                        <img src='../assets/logo.jpg' alt="" width="80" height="80">
+                        <h2 class="title"> A-EYE</h2>
+                <form action="profile.html" id="form" onSubmit=" return validate()"> 
+                    <div class="input-container">
+                        <i class="fa fa-user"></i>
+                        <input type="text" id="email" name="email" placeholder="Enter Email or Username" required>
+                    </div>
+                    <div class="input-container">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" id="psw" name="psw" placeholder="Enter password" required>
+                    </div>
+                    <label> <input class="rememberme" value="remember" type="checkbox"> Remember me</label>
+                    <br>
+                    <button type="submit"> Log in </button>
+                    <p class="f-pass" onclick="toggle()">
+                        <span> Forgot Password? </span>
+                    </p>  
+                    </div>
+                </div>
+                </form>
+                <!---------- END Login---------------->
+            </div>
+        </div>
+        <!---------------END FORMS-------------------------->
+        <!--------------- content section -------------------------->
+        <div class="row content-row">
+            <!--------------- login section -------------------------->
+            <div class="col-1 align-items-center flex-col-1">
+                <div class="text log-in">
+                    <h2>
+                        A-EYE Guide Console
+                    </h2>
+                </div>
+                <div class="pic log-in">
+                    <img src="../assets/portal-pic.svg" alt="">
+                </div>
+            </div>
+            <!--------------- END Login section -------------------------->
+            <!--------------- f-pass section -------------------------->
+            <div class="col-2 align-items-center flex-col-2">
+                <div class="image-Forgot-Password">
+                    <img src="../assets/f-pass.svg" alt="">
+                </div>    
+            </div>
+                <!--------------- END f-pass section -------------------------->
+        </div>
+
+        <!---------------END content -------------------------->
+    </div>
+
+    <script src="login.js">  </script>
+   
+</body>
+</html>

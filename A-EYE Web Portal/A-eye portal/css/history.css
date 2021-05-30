@@ -1,0 +1,35 @@
+.column1 {
+  float: left;
+  width: 33%;
+  padding: 8px;
+}
+.Imgcontainer{
+    padding:20px;
+    background-image: linear-gradient(-45deg,#041470, #1E329D);
+}
+.Imgcontainer img{
+    width:100%;
+}
+/* Clear floats after image containers */
+.row1 {
+  display: table;
+}
+
+.column2 {
+  float: left;
+  width: 33%;
+  padding: 8px;
+}
+.row2{
+    display:table;
+}
+
+@media(max-width:1200px){
+    .Imgcontainer img{
+        max-width:100%;
+        height:auto;
+    }
+    .Imgcontainer{
+        float:none;
+    }
+}

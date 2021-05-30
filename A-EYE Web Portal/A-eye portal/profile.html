@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;
+        0,500;0,600;0,700;1,100;1,200;1,300;1,600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="css/profile.css">
+      <title> Guide Console </title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+     <div class="menu-wrapper">
+        <div class="sideBar-header">
+          <div class="sideBar showMenu">  
+            <div> 
+              <img src="../assets/logo.jpg" alt="" width="55" height="55"> 
+            </div>
+
+            <ul>
+              <li class="selected"> <i class="fa fa-home" onClick="home()"></i> <a href="profile.html"> Home </a></li>
+              <li> <i class="fa fa-history"  onClick="viewHistory()"></i> <a href="history.html"> History </a></li>
+              <li> <i class="fa fa-caret-square-o-right" onClick="viewDemo()"></i> <a href="demo.html">Take a Demo </a></li>
+              <li> <i class="fa fa-map-marker" onClick="viewMap()"></i> <a href="maps.html"> Location </a></li>
+              <li> <i class="fa fa-lightbulb-o" onClick="About()"></i><a href="about.html"> About Us </a></li>
+              <li> <i class="fa fa-question-circle" onClick="getHelp()"></i><a href="help.html"> Help </a></li>
+              <li> <i class="fa fa-sign-out" onClick="logOut() selected"></i> <a href="login.html"> Logout </a></li>
+            </ul>
+          <span class="close-icon" > <i class="fa fa-times"></i></span>
+
+          </div>
+          <div class="backcolor showBack"></div>
+ <!------------Content Section ----->
+          <div class="top-content">
+            <header>
+
+              <div id="web" class="menu-icon" > 
+                <i class="fa fa-bars"></i>
+              </div>
+            
+              <div id="mobile" class="menu-icon">
+                <i class="fa fa-bars"></i>
+              </div>
+
+                <h2> A-EYE </h2>
+              <div class="user-dropdown">
+                <button class="dropbtn" onclick="myFunc()"> <i class="fa fa-user-circle-o fa-2x"> </i> Dennis William <i class="fa fa-caret-down"></i> 
+                </button>
+                <ul class="dropdown-content" id="drop-content">
+                  <li> <a href="editprof.html" onClick="editProfile()">Edit Profile</a> </li>
+                  <li> <a href="passform.html" onClick="showForm()">Change Password</a>
+                  <li> <a href="login.html" onClick="logOut()">Logout</a> </li>
+                </ul>
+              </div>
+                
+            </header>
+            
+            
+            <div class="content-text">
+              <h1> Hi Dennis, Welcome Back </h1>
+              <p>We're glad you're here... </p>
+              <img src="../assets/home.svg">
+            </div>
+              
+          </div>
+            
+       </div>
+     </div>
+  
+  <script src="/profile.js"> </script>
+  <script src="/maps.js"> </script>
+  <script src="/demo.js"> </script>
+  <script src="/about.js"> </script>
+  <script src="/history.js"> </script>
+  <script src="/help.js"> </script>
+  <script src="passform.js"> </script>
+  <script src="editprof.js"> </script>
+
+  
+
+</body>
+
+</html>

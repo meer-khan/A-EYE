@@ -1,0 +1,283 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.sideBar{
+    position:relative;
+    z-index:20;
+    height:110vh;
+    width:20%;
+    background-color: #1E329D;
+    transition:0.3s ease-in-out;
+}
+
+.changeWidth{
+    width:10%;
+    text-align: center;
+    font-size: 20px;
+}
+.sideBar.showMenu{
+    display:block;
+    left:0;
+}
+.hideMenuBar{
+   display:none;
+}
+
+.sideBar div{
+    position:relative;
+    height:10vh;
+    background-color: white;
+}
+.sideBar img{
+    position:absolute;
+    left:50%;
+    top:50%;
+    border-radius: 10%;
+    transform: translate(-50%,-50%);
+}
+.sideBar ul{
+    padding:10px;
+}
+.sideBar li{
+    padding:20px 20px 20px 10px;
+}
+.sideBar li a{
+    color:white;
+}
+.sideBar li i{
+    color: white;
+    margin-right:8px;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: rgb(95, 96, 170);
+    border-radius: 50px;
+}
+
+.sideBar li::after{
+    content:'';
+    width: 0%;
+    height:2px;
+    background:rgb(255, 255, 243);
+    display:block;
+    transition:0.4s;
+}
+.sideBar li:hover::after{
+    width:80%;
+}
+.sideBar .close-icon{
+   position:absolute;
+   top:20px;
+   right:20px;
+   display:none;
+}
+
+.sideBar-header{
+    display:flex;
+}
+.user-dropdown{
+    float:left;
+    overflow:hidden;
+    color: rgb(8, 41, 102);
+}
+.dropbtn i{
+   color: #1E329D;
+   position:relative;
+   top:2px;
+}
+
+.user-dropdown .dropbtn {
+  cursor:pointer;
+  font-size: 14px;  
+  border: none;
+  outline: none;
+  color: #1E329D;
+  padding: 10px 5px;
+  background-color:inherit;
+}
+
+.user-dropdown:hover, .dropbtn {
+  background-color: rgb(232, 233, 250);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  list-style-type: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index:1;
+}
+
+.dropdown-content a{
+  float: none;
+  color: rgb(16, 41, 153);
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+.top-content{
+    width:100%;
+    height:100vh;
+}
+header{
+   background-color: #ffffff;
+   width:100%;
+   height:10%;
+   padding:8px;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 10px 15px 10px -15px rgb(88, 85, 85); 
+}
+#mobile{
+    display:none;
+}
+
+.menu-icon{
+   font-size: 25px;
+   cursor: pointer;
+   color: #1E329D;
+}
+
+header h2{
+    color:#1E329D;
+}
+.content-text img{
+    width:100%;
+    height:100%;
+}
+.content-text{
+    background-color: #ffff;
+    padding:40px;
+    height:84%;
+    margin:2%; 
+}
+.content-text h1{
+    color: #1E329D;
+}
+.content-text p{
+    color: rgb(168, 163, 163);
+    font-style: italic;
+    padding: 8px;
+}
+
+
+@media(max-width:1200px){
+    .sideBar{
+        width:25%;
+    }
+    .close-icon{
+        display:none;
+    }
+}
+
+@media(max-width:900px){
+
+    .sideBar .close-icon{
+        display:block;
+        color:#12248d;
+        font-size: 20px;
+        cursor:pointer;
+    }
+    
+    .backcolor{
+        position:absolute;
+        background-color: rgba(226, 226, 228, 0.7);
+        height:100vh;
+        left:-100%;
+        width:100%;
+    }
+    .backcolor.showBack{
+        left:0;
+    }
+    .sideBar div{
+        height:15vh;
+    }
+    .sideBar img{
+        width:80px;
+        height:80px;
+    }
+    #mobile{
+        display:block;
+        color:rgb(10, 18, 131);
+    }
+    #web{
+        display:none;
+    }
+    
+    .sideBar{
+        position:absolute;
+        width:30%;
+        top:0;
+        left:-100%;
+        cursor:pointer;
+    }  
+}
+
+@media(max-width:700px){
+    .sideBar{
+        width:40%;
+    }
+    header{
+        width:100vh;
+    }
+    .backcolor{
+        position:fixed;
+        background-color: rgba(212, 212, 214, 0.7);
+        height:100vh;
+        left:-100%;
+        width:100%;
+    }
+    .content-text{
+        height:100%;
+        width:100vh;
+    }
+    
+}
+
+@media(max-width:400px){
+    .sideBar{
+        width:60%;
+    }
+
+    .backcolor{
+        position:fixed;
+        background-color:rgba(212, 212, 214, 0.7);
+        height:100vh;
+        left:-100%;
+        width:100%;
+    }
+    #mobile{
+        height:25px;
+    }
+    header h1{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:320px){
+    .sideBar{
+        width:320px;
+    }
+}

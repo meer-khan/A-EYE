@@ -1,0 +1,20 @@
+.map {
+    width:75%;
+    height:75%;
+    margin-left:10%;
+    padding:6px;
+}
+.map i{
+    margin-left: 40%;
+    color: #1E329D;
+    font-size: 35px;
+}
+h3{
+    color: #1E329D;
+    padding:10px;
+}
+@media(max-width:900px){
+    .map{
+        margin-left: 5%;
+    }
+}
