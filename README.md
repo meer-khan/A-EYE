@@ -8,6 +8,8 @@ In order to overcome the difficulties for the visually impaired people, A-eye wi
 ## Author
 
 #### Shahmeer Khan 🧑
+#### Fatime Naeem :girl:
+#### Muddasar Ajmal 🧑
 [![LinkedIn Link](https://img.shields.io/badge/Connect-Shahmeer-blue.svg?logo=linkedin&longCache=true&style=social&label=Connect
 )](https://www.linkedin.com/in/meer-khan)
 
