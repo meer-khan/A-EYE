@@ -1,5 +1,7 @@
 
 # A-EYE
+[![Follow me on Medium](https://img.shields.io/badge/Medium-%40meer--khan-02b875?style=for-the-badge&logo=medium)](https://medium.com/@meer-khan) [![GitHub](https://img.shields.io/badge/GitHub-%40meer--khan-181717?style=for-the-badge&logo=github)](https://github.com/meer-khan)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%40meer--khan-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/meer-khan/)
 Artificial Eye:
 
 In order to overcome the difficulties for the visually impaired people, A-eye will aim to provide the cost effective, innovative and more efficient solution. It will help the visually impaired people to run their life as usual. It will have the features like OCR, currency or face recognition, facial expression detection, path and obstacle detection etc., which will allow the blind people to move independently without any manual help or guidance. The application will provide guidance to the user using voice command mechanism. It will be designed in such a way that it will help the visually impaired people to overcome their daily life obstacles. The app will have a guide panel where the history of stored faces, short texts scanned by camera, currency notes, scenes, objects will be saved so that guide can check all the activities of a blind person. The app feature i.e. voice assistance will be helpful for the visually impaired people in order to become independent. 
